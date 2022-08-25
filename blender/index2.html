@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Blender renders</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>My Renders</h1>
+        </div>
+        <div class="container">
+            <video src="./videos/interior0001-0146.mov" class="slider" autoplay loop muted controls></video>
+    
+            <ul>
+                <li onclick="videoslider('./videos/interior0001-0146.mov')"><video src="./videos/interior0001-0146.mov"></video></li>
+                <li onclick="videoslider('./videos/0001-0144.mov')"><video src="./videos/0001-0144.mov"></video></li>
+                <li onclick="videoslider('./vid1 .mp4')"><video src="./vid1 .mp4"></video></li>
+                <li onclick="videoslider('./video.mp4')"><video src="./video.mp4"></video></li>
+                <li onclick="videoslider('./video1.mp4')"><video src="./video1.mp4"></video></li>
+            </ul>
+        </div>
+    
+    
+        <script>
+    
+            function videoslider(links){
+                document.querySelector(".slider").src = links;
+            }
+    
+        </script>
+    </body>
+</html>

@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" href="app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('Y_Zx0arltENXUvDSX');
+    })();
+</script>
   <title>solicit Graphixer</title>
 </head>
 
@@ -40,15 +48,9 @@
         <h1>I am<span></span></h1>
         <h1>Nishan Biswas <span></span></h1>
       </div>
-       <img class="mySlides" src="images/stone ruins.png">
-        <img class="mySlides" src="images/waterfall.png">
-        <img class="mySlides" src="images/rndrriver.png">
-        <img class="mySlides" src="images/LOTR.png">
-        <img class="mySlides" src="images/0009.png">
-        <img class="mySlides" src="images/0089.png">
         <p>
         <a href="#projects" type="button" class="cta">Portfolio</a>
-        <a href="https://www.youtube.com/channel/UCfKsAltdOClH_UD067o7vFg" type="button" class="cta1">Watch Video</a>
+      </p>
       </p>
       </div>
   </section>
@@ -68,7 +70,13 @@
           <p></a>Take this test to test your general knowledge skill and see how much you score.The test has been created through javascript,html and css</p>
           <button class="quiz" onclick="window.location.href='appquiz/index2.html';">Start quiz</button>
         </div>
-        
+        <!--snd-->
+        <div class="service-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+          <h2></a>My Music Player</h2>
+          <p></a>Listen and chill with the music player.Contains some chilling bgm songs to help you relax.Music as always is the best healer.So click in.... </p>
+          <button class="quiz" onclick="window.location.href='my MusicApp/index1.html';">Load</button>
+        </div>
       </div>
     </div>
   </section>
@@ -177,10 +185,60 @@
           </div>
         </div>
       </div>
+      <!--beg-->
+      <div class="background">
+        <div class="container">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+              <div class="screen-body-item left">
+                <div class="app-title">
+                  <span>Provide Feedback</span>
+                  <span>or</span>
+                  <span>send Queries</span>
+                </div>
+               
+              </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" id="fullname" placeholder="NAME" value="" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" id="email_id" placeholder="EMAIL" required>
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" id="message" placeholder="MESSAGE" required>
+                  </div>
+                  <div class="app-form-group buttons">
+                   
+                    <button class="cta2" onclick="sendMail()">SEND</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </section>
   <!-- End Contact Section -->
-
+  
   <!-- Footer -->
   <section id="footer">
     <div class="footer container">
